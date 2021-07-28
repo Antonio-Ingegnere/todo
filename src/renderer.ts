@@ -29,6 +29,7 @@
 // import { ipcRenderer } from "electron";
 
 import appRuntime from "./appRuntime";
+import './app'
 
 import "./index.css";
 
