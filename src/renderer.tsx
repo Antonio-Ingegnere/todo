@@ -28,8 +28,9 @@
 
 // import { ipcRenderer } from "electron";
 
-import appRuntime from "./appRuntime";
-import './app'
+//import appRuntime from "./appRuntime";
+import ReactDOM from "react-dom"
+import {App} from './app'
 
 import "./index.css";
 
@@ -39,7 +40,10 @@ console.log(
 
 // const ipc = ipcRenderer;
 
+/*
 appRuntime.subscribe("asynchronous-message", (event: any, message: any) => {
   document.getElementById("newTask").focus();
 });
+*/
 
+ReactDOM.render(<App />, document.getElementById('root'));
